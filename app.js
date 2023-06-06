@@ -128,7 +128,7 @@ function menuCategory() {
       const categorie = e.currentTarget.textContent.toLowerCase();
 
       const choixCategorie = menu.filter(function (menuItem) {
-        if (menuItem.category.toLocaleLowerCase() === categorie) {
+        if (menuItem.category.toLowerCase() === categorie) {
           return menuItem.category;
         }
       });
